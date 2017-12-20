@@ -24,5 +24,5 @@ kubectl create -f storage-class.yaml
 4. Run `kubefed` init
 
 ```
-kubefed init gc --host-cluster-context=DigitalOcean --dns-provider="coredns"  --dns-zone-name="global."
+kubefed init gc --host-cluster-context=DigitalOcean --dns-provider="coredns"  --dns-zone-name="global." --etcd-persistent-storage=false
 ```
